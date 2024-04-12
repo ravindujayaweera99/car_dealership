@@ -1,0 +1,35 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+}
+
+.qualities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome h2 {
+    text-align: center;
+}
+
+.welcome h1 {
+    text-align: center;
+    color: #000;
+}
+
+.welcome p {
+    text-align: justify;
+    color: #253241;
+}
+
+.welcome .brand-name {
+    color: #C91213;
+}
+
+.qualities .col-1, .qualities .col-2, .qualities .col-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

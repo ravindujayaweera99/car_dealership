@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.id {
+    font-size: 30px;
+    color: #C91213;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    color: #253241;
+    font-weight: 900;
+    margin-right: 70px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #C91213;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
