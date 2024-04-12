@@ -1,22 +1,22 @@
 import "./App.css";
-import Footer from "./shared/Footer/Footer.jsx";
-import Navbar from "./shared/Navbar/Navbar.jsx";
-import hero from "./assets/hero.jpg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home.jsx";
-
-const imgStyle = {
-  width: "100vw",
-  height: "90vh",
-  margin: '0'
-};
+import Inventory from "./components/Inventory/Inventory.jsx";
+import Aboutus from "./components/About Us/Aboutus.jsx";
+import Blogs from "./components/Blogs/Blogs.jsx";
+import Contactus from "./components/Contact Us/Contactus.jsx";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/inventory" element={<Inventory />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contactus" element={<Contactus />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
